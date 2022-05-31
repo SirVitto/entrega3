@@ -1,0 +1,59 @@
+
+.main-nosotros{
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-areas:
+                            "ban ban ban" 
+                            "imagen1 imagen3 imagen3"
+                            "amalo amalo amalo"
+                            "mainP mainP mainP"
+                            "barra barra barra";
+        margin-top: 0.3rem;
+        .ban1{
+                grid-area: ban;
+                
+                }
+            }
+        
+        .imagen1{
+            grid-area: imagen1;
+            margin-left: 2rem;
+        }
+        .imagen3{
+            grid-area: imagen3;
+            justify-self: center;
+            
+        }
+        .mis-amalo{
+            @include estilo ($color-secundario, 1.2rem,);
+            display: grid;
+            grid-area: amalo;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            margin-top: $espacio-sepa;
+            align-content: center;
+            
+        }
+        .nos-mision{
+            @include estilo ($color-secundario, 1.2rem,);
+            display: grid;
+            height: 2rem;
+            grid-area: mainP;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            margin-top: $espacio-sepa;
+            
+        }
+
+.barra-pie{
+    background-color: $color-secundario;
+}
+
+.barra{
+    grid-area: barra;
+    margin-top: 0.2rem;
+}
+
+.inv-cel{
+    display: none;
+}

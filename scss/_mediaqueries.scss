@@ -1,0 +1,101 @@
+
+/* mq*/
+
+@media screen and (max-width:760px){
+    /*nav arriba*/
+header .nav-estilo {
+    @include estilo ($color-secundario, 1rem,);
+    font-family: 'Open Sans', sans-serif; }
+    header .nav-estilo .navbar-brand {
+    justify-content: center; }
+
+
+    /* barra pie*/
+.barra-pie {
+    background-color: $color-secundario;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: -3rem; 
+}
+
+    .main-nosotros{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+                            "icel"
+                            "amalo"
+                            "mainP"
+                            "barra"
+                            "footer";
+        margin-top: 0.3rem;
+        justify-content: center;
+}
+
+.icel{
+    grid-area: icel;
+}
+.imagen3{
+display: none;
+} 
+.ban1{
+    display: none;
+}
+.mis-amalo{
+    display: none
+}
+.nos-mision{
+display: none;
+}
+
+
+}
+
+@media screen and (max-width:1020px){
+
+
+    .main-nosotros{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-template-areas:
+                            "ban" 
+                            "phone"
+                            "amalo"
+                            "mainP"
+                            "barra";
+        margin-top: 0.3rem;
+    }
+.phone {
+    grid-area: phone;
+    justify-content: center;
+    margin-left: -7rem;
+}
+
+.icel{
+    display: none;
+}
+header .nav-estilo {
+    @include estilo ($color-secundario, 1rem,);
+    font-family: 'Open Sans', sans-serif; }
+    header .nav-estilo .navbar-brand {
+    justify-content: center; }
+
+
+    /* barra pie*/
+.barra-pie {
+    background-color: $color-secundario;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+max-width: fit-content;
+}
+.amalo-mis{
+
+    background-color: $color-principal;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    max-height: fit-content;
+}
+.ban1{
+margin-left: -7rem;
+}
+
+}

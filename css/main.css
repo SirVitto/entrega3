@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* variables*/
+header .nav-estilo, .barra-pie {
+  background-color: Whitesmoke;
+  font-size: 1.5rem; }
+
+/*nav arriba*/
+header .nav-estilo {
+  font-family: 'Open Sans', sans-serif; }
+  header .nav-estilo .navbar-brand {
+    justify-content: center; }
+
+/* barra pie*/
+.barra-pie {
+  font-family: 'Open Sans', sans-serif; }
+
+.main-nosotros {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-areas: "ban ban ban"  "imagen1 imagen3 imagen3" "amalo amalo amalo" "mainP mainP mainP" "barra barra barra";
+  margin-top: 0.3rem; }
+  .main-nosotros .ban1 {
+    grid-area: ban; }
+
+.imagen1 {
+  grid-area: imagen1;
+  margin-left: 2rem; }
+
+.imagen3 {
+  grid-area: imagen3;
+  justify-self: center; }
+
+.mis-amalo {
+  background-color: Whitesmoke;
+  font-size: 1.2rem;
+  display: grid;
+  grid-area: amalo;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0.5rem;
+  align-content: center; }
+
+.nos-mision {
+  background-color: Whitesmoke;
+  font-size: 1.2rem;
+  display: grid;
+  height: 2rem;
+  grid-area: mainP;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0.5rem; }
+
+.barra-pie {
+  background-color: Whitesmoke; }
+
+.barra {
+  grid-area: barra;
+  margin-top: 0.2rem; }
+
+.inv-cel {
+  display: none; }
+
+/* Anillos */
+.main-productos {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-areas: "ban ban ban ban ban"  "p1 p2 p3 p4 p5" "p6 p7 p8 p9 p10" "amalo amalo amalo amalo amalo" "mainP mainP mainP mainP mainP" "barra barra barra barra barra";
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin-left: 3rem;
+  width: 120%; }
+  .main-productos .p1 {
+    grid-area: p1; }
+  .main-productos .p2 {
+    grid-area: p2; }
+  .main-productos .p3 {
+    grid-area: p3; }
+  .main-productos .p4 {
+    grid-area: p4; }
+  .main-productos .p5 {
+    grid-area: p5; }
+  .main-productos .p6 {
+    grid-area: p6; }
+  .main-productos .p7 {
+    grid-area: p7; }
+  .main-productos .p8 {
+    grid-area: p8; }
+  .main-productos .p9 {
+    grid-area: p9; }
+  .main-productos .p10 {
+    grid-area: p10; }
+
+/* medidas*/
+.main-medidas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "ban ban ban"  "med1 med2 med3" "amalo amalo amalo" "mainP mainP mainP" "barra barra barra";
+  font-family: 'Open Sans', sans-serif;
+  text-align: center; }
+
+med1 {
+  grid-area: med1; }
+
+med2 {
+  grid-area: med2; }
+
+med3 {
+  grid-area: med3; }
+
+/* Nosotras*/
+.info-nos {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "ban ban ban"  "nos info info" "amalo amalo amalo" "mainP mainP mainP" "barra barra barra";
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 0.3rem; }
+
+.nosotras {
+  grid-area: nos; }
+
+.in-fo {
+  grid-area: info;
+  padding: 1rem; }
+
+/* contacto */
+.conTacto {
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 5rem; }
+
+/*estilo del footer*/
+footer p {
+  grid-area: foot;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  align-items: flex-end;
+  margin-top: 1rem; }
+
+/* mq*/
+@media screen and (max-width: 760px) {
+  /*nav arriba*/
+  header .nav-estilo {
+    background-color: Whitesmoke;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif; }
+  header .nav-estilo .navbar-brand {
+    justify-content: center; }
+  /* barra pie*/
+  .barra-pie {
+    background-color: Whitesmoke;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: -3rem; }
+  .main-nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "icel" "amalo" "mainP" "barra" "footer";
+    margin-top: 0.3rem;
+    justify-content: center; }
+  .icel {
+    grid-area: icel; }
+  .imagen3 {
+    display: none; }
+  .ban1 {
+    display: none; }
+  .mis-amalo {
+    display: none; }
+  .nos-mision {
+    display: none; } }
+
+@media screen and (max-width: 1020px) {
+  .main-nosotros {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-areas: "ban"  "phone" "amalo" "mainP" "barra";
+    margin-top: 0.3rem; }
+  .phone {
+    grid-area: phone;
+    justify-content: center;
+    margin-left: -7rem; }
+  .icel {
+    display: none; }
+  header .nav-estilo {
+    background-color: Whitesmoke;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif; }
+  header .nav-estilo .navbar-brand {
+    justify-content: center; }
+  /* barra pie*/
+  .barra-pie {
+    background-color: Whitesmoke;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    max-width: fit-content; }
+  .amalo-mis {
+    background-color: White;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    max-height: fit-content; }
+  .ban1 {
+    margin-left: -7rem; } }

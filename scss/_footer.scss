@@ -1,0 +1,9 @@
+/*estilo del footer*/
+footer p{
+    grid-area: foot;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    align-items: flex-end;
+    margin-top: 1rem;
+}

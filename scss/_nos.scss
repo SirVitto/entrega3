@@ -1,0 +1,62 @@
+/* medidas*/ 
+.main-medidas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+                        "ban ban ban" 
+                        "med1 med2 med3"
+                        "amalo amalo amalo"
+                        "mainP mainP mainP"
+                        "barra barra barra";
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+med1{
+    grid-area: med1;
+}
+med2{
+    grid-area: med2;
+}
+med3{
+    grid-area: med3;
+}
+
+
+
+
+/* Nosotras*/
+
+.info-nos{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+                        "ban ban ban" 
+                        "nos info info"
+                        "amalo amalo amalo"
+                        "mainP mainP mainP"
+                        "barra barra barra";
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 0.3rem;
+
+}
+
+.nosotras{
+    grid-area: nos;
+}
+.in-fo{
+    grid-area: info;
+    padding: 1rem;
+}
+
+/* contacto */
+
+.conTacto{
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.5rem; 
+    text-align: center;
+    padding: 5rem;
+}

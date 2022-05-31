@@ -1,0 +1,17 @@
+/*nav arriba*/
+header{
+    .nav-estilo{
+        @extend %col-tam;
+        font-family: 'Open Sans', sans-serif;
+        .navbar-brand{
+            justify-content: center;
+        }
+    }
+}
+
+/* barra pie*/
+
+.barra-pie{
+    @extend %col-tam;
+    font-family: 'Open Sans', sans-serif;
+}
